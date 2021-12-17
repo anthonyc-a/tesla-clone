@@ -1,0 +1,199 @@
+.home-contain {
+  display: flex;
+  overflow: auto;
+  flex: none;
+  flex-flow: column nowrap;
+  scroll-snap-type: y proximity;
+
+  .home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+    flex: none;
+
+    .home-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 16.5vh;
+      text-align: center;
+      letter-spacing: -0.2px;
+
+      h1 {
+        margin-bottom: 4px;
+      }
+
+      h2 {
+        a {
+          position: relative;
+          color: #5c5d61;
+          transition: 0.1s ease-in;
+
+          &:hover {
+            color: #181b21;
+            &::after {
+              padding-bottom: 1px;
+              background-color: #181b21;
+            }
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #5c5d61;
+          }
+        }
+      }
+    }
+
+    .home-cta {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      bottom: calc(3vh + 52px);
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+
+      .cta-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 256px;
+        height: 40px;
+        border-radius: 20px;
+        padding: 6px 24px 4px 24px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        background-color: #181b21cb;
+        color: #fff;
+      }
+
+      .btn-2 {
+        margin-left: 24px;
+        background-color: rgba(255, 255, 255, 0.582);
+        color: #181b21cb;
+      }
+    }
+
+    .hero-cta {
+      bottom: calc(10vh + 54px);
+    }
+
+    .low {
+        bottom: calc(3vh + 41px);
+    }
+
+    .high {
+        bottom: calc(4vh + 96px);
+    }
+  }
+
+  .section-one {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/ca583b8c-7cfa-4202-9be2-1d3f0e3f24cf/bvlatuR/std/2880x1800/M3-Homepage-RHD-D);
+    background-size: cover;
+    background-position: center;
+
+    .hero-scroll {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      bottom: calc(2vh + 12px);
+      left: 50%;
+      transform: translateX(-50%);
+
+      a {
+        position: relative;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        margin-bottom: 16px;
+        opacity: 0.85;
+        transition: 0.1s ease-in-out;
+
+        &:hover {
+          opacity: 1;
+          &::after {
+            padding-bottom: 1px;
+          }
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #181b21;
+        }
+      }
+
+      svg {
+        animation: arrow-anim 2s cubic-bezier(0.2, 0.575, 0.65, 0.85) infinite;
+        @keyframes arrow-anim {
+          0% {
+            transform: translateY(0);
+          }
+
+          30% {
+            transform: translateY(5px);
+          }
+
+          40% {
+            transform: translateY(0);
+          }
+
+          50% {
+            transform: translateY(5px);
+          }
+
+          60% {
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+
+  .section-two {
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/8e2df1b9-a4bf-4eb9-beec-2cf5cc77fca0/bvlatuR/std/2880x2400/Desktop-ModelY);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-three {
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-four {
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/27d0055c-b0bf-476c-b3aa-ec59d314f871/bvlatuR/std/2880x2400/Desktop-SolarPanels);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-five {
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/30b41f71-b79d-41a1-a29a-1c6ae23acf73/bvlatuR/std/2880x1800/MX-Homepage-RHD-D);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .section-six {
+    background-image: url(https://tesla-cdn.thron.com/delivery/public/image/tesla/dd739764-bcaa-4263-9488-8c73bc9fb046/bvlatuR/std/2880x2400/Desktop-Accessories);
+    background-size: cover;
+    background-position: center;
+  }
+}

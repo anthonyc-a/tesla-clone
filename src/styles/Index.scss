@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+@import "../styles/Header/Header.scss";
+@import "../styles/Home/Home.scss";
+@import "../styles/Footer/Footer.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", Helvetica, Arial, Sans-Serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #181b21;
+}
+
+h1 {
+  font-size: 41px;
+  font-weight: 600;
+  color: #393c41;
+}
+
+h2 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #5c5d61;
+}
+
+a {
+  text-decoration: none;
+  color: #181b21;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: "Montserrat", Helvetica, Arial, Sans-Serif;
+  background-color: transparent;
+  border: none;
+}

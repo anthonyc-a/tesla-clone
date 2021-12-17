@@ -1,0 +1,20 @@
+.footer {
+    position: relative;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+
+  ul {
+      display: flex;
+    li {
+      a {
+        padding: 4px 8px;
+        color: #5c5d61;
+      }
+    }
+  }
+}
