@@ -332,6 +332,31 @@
   background-position: center;
 }
 
+.footer {
+  position: relative;
+  bottom: 24px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer ul li a {
+  padding: 4px 8px;
+  color: #5c5d61;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
