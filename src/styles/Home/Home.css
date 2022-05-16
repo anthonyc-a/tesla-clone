@@ -1,4 +1,8 @@
 .home-contain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,6 +16,8 @@
           flex-flow: column nowrap;
   -ms-scroll-snap-type: y proximity;
       scroll-snap-type: y proximity;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 .home-contain .home-section {

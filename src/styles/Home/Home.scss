@@ -1,9 +1,14 @@
 .home-contain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   overflow: auto;
   flex: none;
   flex-flow: column nowrap;
   scroll-snap-type: y proximity;
+  transition: .5s ease-in-out;
 
   .home-section {
     position: relative;
